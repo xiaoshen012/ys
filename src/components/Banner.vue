@@ -40,7 +40,7 @@ export default {
   methods: {
     getbanner() {
       this.$axios.get("https://api.it120.cc/small4/banner/list").then(res => {
-        console.log(res);
+        // console.log(res);
         this.banner = res;
       });
     }
