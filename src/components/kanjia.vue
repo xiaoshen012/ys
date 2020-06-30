@@ -74,17 +74,22 @@ export default {
 <style lang="scss" scoped>
 .kan {
   width: 100%;
-  height: 100%;
+  // height: 100%;
+  border-bottom: 0.14rem solid #F5F5F5;
   .kan-top {
-    width: 100%;
+    font-size: 0.26rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    padding: 0.2rem;
-    border-bottom: 0.01rem solid #e9e9e9;
-    .van-icon {
-      text-indent: 0.2rem;
-    }
+    text-align: center;
+    height: 0.65rem;
   }
   .ul {
     li {

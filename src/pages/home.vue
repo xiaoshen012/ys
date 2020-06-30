@@ -2,14 +2,16 @@
     <div class="home">
         <Banner></Banner>
         <Kanjia></Kanjia>
+        <Zt></Zt>
     </div>
 </template>
 
 <script>
 import Banner from "@/components/Banner"
 import Kanjia from "@/components/kanjia"
+import Zt from "@/components/zt"
     export default {
-        components:{Banner,Kanjia},
+        components:{Banner,Kanjia,Zt},
         name:"Home",
         data(){
             return{
