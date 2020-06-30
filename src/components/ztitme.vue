@@ -1,4 +1,5 @@
 <template>
+<!-- 精选专题内容 -->
     <div>
         <li @click="add(list.id)">
             <img :src="list.pic" alt="">

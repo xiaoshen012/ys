@@ -1,4 +1,5 @@
   <template>
+  <!-- 轮播图 -->
   <div class="hello">
     <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
       <van-swipe-item v-for="(itme,key) in banner" :key="key">
@@ -14,11 +15,11 @@
         <img src="../assets/cd2.7808faf.png" alt />
         <p>礼卷</p>
       </li>
-      <li>
+      <li @click="kj">
         <img src="../assets/cd3.7808faf.png" alt />
         <p>砍价</p>
       </li>
-      <li>
+      <li @click="zl">
         <img src="../assets/cd4.7808faf.png" alt />
         <p>专栏</p>
       </li>
@@ -38,11 +39,24 @@ export default {
     this.getbanner();
   },
   methods: {
+    //请求轮播的数据
     getbanner() {
       this.$axios.get("https://api.it120.cc/small4/banner/list").then(res => {
         // console.log(res);
         this.banner = res;
       });
+    },
+    kj(){
+      this.$toast.setDefaultOptions(this.$toast("加载中"),{ duration: 100,});
+      this.$nextTick(() => {
+        setTimeout(() => {
+            this.$router.push("/kanlist")
+        }, 1000);
+      });
+    },
+    zl(){
+      this.$router.push("/ztlist")
+      
     }
   }
 };

@@ -1,4 +1,5 @@
 <template>
+<!-- 精选专题 -->
   <div class="zt">
     <div class="zt-top">
       <p @click="ztlist">精选专题</p>
@@ -30,7 +31,7 @@ export default {
   },
   methods:{
       ztlist(){
-          this.$router.push("ztlist")
+          this.$router.push("/ztlist")
       }
   }
 };

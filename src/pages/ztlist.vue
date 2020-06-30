@@ -1,4 +1,5 @@
 <template>
+<!-- 严选专栏页 -->
   <div>
     <div class="ztlist-top">
       <van-icon @click="fh()" name="arrow-left" />

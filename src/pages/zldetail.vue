@@ -1,4 +1,5 @@
 <template>
+<!--专栏详情页  -->
   <div>
     <div class="top">
       <van-icon @click="fh" name="arrow-left" />

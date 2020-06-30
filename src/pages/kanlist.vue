@@ -1,4 +1,5 @@
 <template>
+<!-- 商品的砍价列表 -->
   <div class="klist">
     <div class="klist-top">
       <van-icon name="arrow-left"  @click="fh()" />
