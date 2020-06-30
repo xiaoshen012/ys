@@ -5,4 +5,4 @@ function rem(){
 }
 rem();
 
-window.onresize = rem;
+window.onresize = rem;  

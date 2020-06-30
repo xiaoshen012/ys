@@ -1,7 +1,7 @@
 <template>
   <div class="klist">
     <div class="klist-top">
-      <van-icon name="arrow-left" size="20" @click="fh()" />
+      <van-icon name="arrow-left"  @click="fh()" />
       <p>砍价列表</p>
       <p></p>
     </div>
@@ -34,6 +34,9 @@
 <script>
 export default {
   name: "Kanlist",
+  mounted() {
+    document.title = "砍价列表";
+  },
   data() {
     return {
       list: []
@@ -51,8 +54,8 @@ export default {
           this.list = res.goodsMap;
         });
     },
-    fh(){
-        this.$router.go(-1)
+    fh() {
+      this.$router.go(-1);
     }
   }
 };

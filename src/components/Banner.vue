@@ -7,19 +7,19 @@
     </van-swipe>
     <ul>
       <li>
-        <img src="/static/cd1.7808faf.png" alt />
+        <img src="../assets/cd1.7808faf.png" alt />
         <p>签到</p>
       </li>
       <li>
-        <img src="/static/cd2.7808faf.png" alt />
+        <img src="../assets/cd2.7808faf.png" alt />
         <p>礼卷</p>
       </li>
       <li>
-        <img src="/static/cd3.7808faf.png" alt />
+        <img src="../assets/cd3.7808faf.png" alt />
         <p>砍价</p>
       </li>
       <li>
-        <img src="/static/cd4.7808faf.png" alt />
+        <img src="../assets/cd4.7808faf.png" alt />
         <p>专栏</p>
       </li>
     </ul>
@@ -63,7 +63,7 @@ export default {
 }
 .hello {
   width: 100%;
-  height: 100%;
+  height:8rem;
   position: relative;
 }
 ul {

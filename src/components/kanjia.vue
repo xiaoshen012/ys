@@ -2,7 +2,7 @@
   <div class="kan">
     <div class="kan-top">
       <p @click="kj">全民砍价</p>
-      <van-icon name="arrow" size="20px" />
+      <van-icon name="arrow"  />
     </div>
     <ul @click="kj" class="ul">
       <li v-for="(itme,key) in list" :key="itme.id">
@@ -60,7 +60,6 @@ export default {
         });
     },
     kj() {
-      ;
       this.$toast.setDefaultOptions(this.$toast("加载中"),{ duration: 1000 ,});
       this.$nextTick(() => {
         setTimeout(() => {
