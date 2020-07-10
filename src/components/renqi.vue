@@ -107,6 +107,7 @@ ul {
   }
 }
 .renqi{
+  width: 100%;
   margin-bottom: 1.4rem;
 }
 </style>

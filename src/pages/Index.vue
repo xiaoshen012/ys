@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .sy{
-//   margin-bottom: 1.4rem;
-// }
+.sy{
+  width: 100%;
+}
 </style>

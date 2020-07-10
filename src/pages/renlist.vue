@@ -1,6 +1,6 @@
 <template>
   <!-- 人气推荐列表页 -->
-  <div>
+  <div class="renlist">
     <div class="ren">
       <van-icon name="arrow-left" @click="fh()" />
       <p>人气推荐</p>
