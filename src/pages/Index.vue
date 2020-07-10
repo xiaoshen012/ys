@@ -1,6 +1,6 @@
 <template>
   <!-- 首页 -->
-  <div>
+  <div class="sy">
         <!-- 轮播组件 -->
         <Banner></Banner>
         <!-- 砍价组件 -->
@@ -22,6 +22,8 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-
+<style lang="scss" scoped>
+// .sy{
+//   margin-bottom: 1.4rem;
+// }
 </style>

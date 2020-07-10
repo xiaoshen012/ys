@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="footer">
     <van-tabbar route active-color="#f00">
       <van-tabbar-item replace to="/home/Index" icon="home-o">首页</van-tabbar-item>
       <van-tabbar-item replace to="/home/classify" icon="apps-o">分类</van-tabbar-item>
@@ -13,6 +13,9 @@
 export default {};
 </script>
 
-<style lang="sass" scoped>
-
+<style lang="scss" scoped>
+.footer{
+  width: 100%
+  
+}
 </style>

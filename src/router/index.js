@@ -49,7 +49,7 @@ export default new Router({
       component: Ztlist
     },
     {
-      path: '/zldetail:id',
+      path: '/zldetail/:id',
       name: 'Zldetail',
       component: Zldetail
     },

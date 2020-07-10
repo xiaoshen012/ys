@@ -1,5 +1,5 @@
 <template>
-<!-- 严选专栏页 -->
+  <!-- 严选专栏页 -->
   <div>
     <div class="ztlist-top">
       <van-icon @click="fh()" name="arrow-left" />
@@ -8,12 +8,11 @@
     </div>
     <ul>
       <li v-for="(itme,key) in list" :key="itme.id">
-        <img :src="itme.pic" alt="">
+        <img :src="itme.pic" alt />
         <p>{{itme.title}}</p>
         <p>{{itme.descript}}</p>
         <p @click="add(itme.id)">查看详情</p>
       </li>
-     
     </ul>
   </div>
 </template>
@@ -21,27 +20,28 @@
 <script>
 export default {
   name: "Ztlist",
-  data () {
-      return {
-        list:[]      
-      }
+  data() {
+    return {
+      list: []
+    };
   },
   mounted() {
     document.title = "严选专栏";
-    this.$axios.get("https://api.it120.cc/small4/cms/news/list").then((res)=>{
-        this.list=res
-    })
+    this.$axios.get("https://api.it120.cc/small4/cms/news/list").then(res => {
+      this.list = res;
+    });
   },
-  methods:{
-      fh() {
+  methods: {
+    fh() {
       this.$router.go(-1);
     },
-    add(id){
-        // console.log(id)
-        this.$router.push("/zldetail"+id)
+    add(id) {
+      // console.log(id)
+      // this.$router.push("/zldetail"+id)
+      // this.$router.push({path:"zldetail",query:{id:id}})
+      this.$router.push({name: "Zldetail",params: {id: id }});
     }
   }
-
 };
 </script>
 
@@ -54,11 +54,16 @@ export default {
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
-  padding: 0 0.3rem;
+  // padding: 0 0.3rem;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 100;
+  .van-icon{
+    text-indent: .15rem;
+    font-size: .3rem;
+    font-weight: bold;
+  }
 }
 ul {
   width: 100%;

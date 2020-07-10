@@ -1,6 +1,6 @@
 <template>
 <!-- 人气推荐内容 -->
-  <div>
+  <div class="renqi">
     <div class="zt-top">
       <p @click="ren">人气推荐</p>
       <van-icon name="arrow" />
@@ -105,5 +105,8 @@ ul {
       margin-top: 0.1rem;
     }
   }
+}
+.renqi{
+  margin-bottom: 1.4rem;
 }
 </style>

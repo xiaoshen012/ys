@@ -1,10 +1,10 @@
 <template>
-<!-- 人气推荐列表页 -->
+  <!-- 人气推荐列表页 -->
   <div>
     <div class="ren">
-        <van-icon name="arrow-left" @click="fh()" />
-        <p>人气推荐</p>
-        <p></p>
+      <van-icon name="arrow-left" @click="fh()" />
+      <p>人气推荐</p>
+      <p></p>
     </div>
     <ul>
       <li v-for="(itme,key) in list" :key="itme.id">
@@ -13,7 +13,6 @@
         <p>{{itme.characteristic}}</p>
         <p>￥{{itme.minPrice}}</p>
       </li>
-      
     </ul>
   </div>
 </template>
@@ -21,28 +20,33 @@
 <script>
 export default {
   name: "",
-  data () {
-      return {
-          list:[]
-      }
+  data() {
+    return {
+      list: []
+    };
   },
-  mounted(){
-      document.title = "人气推荐";
-      this.$axios.get("https://api.it120.cc/small4/shop/goods/list").then((res)=>{
-          this.list=res
-      })
+  mounted() {
+    document.title = "人气推荐";
+    this.renlist()
   },
-  methods:{
-      fh() {
+  methods: {
+    fh() {
       this.$router.go(-1);
+    },
+    renlist() {
+      this.$axios
+        .get("https://api.it120.cc/small4/shop/goods/list")
+        .then(res => {
+          this.list = res;
+        });
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.ren{
-    width: 90%;
+.ren {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,9 +71,9 @@ ul {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   li {
-      width: 48%;
+    width: 48%;
     img {
       width: 100%;
       height: 4.2rem;

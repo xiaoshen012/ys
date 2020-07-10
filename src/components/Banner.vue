@@ -68,7 +68,7 @@ export default {
   font-size: 20px;
   line-height: 150px;
   text-align: center;
-  background-color: #39a9ed;
+  /* background-color: #39a9ed; */
   height: 7rem;
 }
 .van-swipe-item img {
